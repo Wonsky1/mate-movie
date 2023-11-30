@@ -31,7 +31,6 @@ class MovieListView(ListView):
 
         return queryset
 
-
 class MoviesViewSet(viewsets.ModelViewSet):
     queryset = Movie.objects.all()[:5]
     serializer_class = MovieSerializer
