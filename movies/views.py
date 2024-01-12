@@ -30,7 +30,6 @@ class MovieListView(ListView):
             queryset = queryset.filter(movie_genres__genre__name=genre_filter)
 
         return queryset
-# ююююююю
-# class MoviesViewSet(viewsets.ModelViewSet):
-#     queryset = Movie.objects.all()[:5]
-#     serializer_class = MovieSerializer
+class MoviesViewSet(viewsets.ModelViewSet):
+    queryset = Movie.objects.all()[:5]
+    serializer_class = MovieSerializer
